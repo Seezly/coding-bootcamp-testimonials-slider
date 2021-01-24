@@ -1,0 +1,84 @@
+@media only screen and (min-width: 1023px) {
+    @import 'animations';
+    
+    body {
+        background: url('../images/pattern-curve.svg') bottom left no-repeat,
+                    url('../images/pattern-bg.svg') 42.75vw 7.3vh no-repeat;
+        background-size: 49%;
+    }
+
+    main {
+    
+        .slider {
+            height: 100%;
+    
+            &-slide {
+                height: 100%;
+                flex-direction: unset;
+                align-items: center;
+    
+                @include transition(.5s);
+            }
+    
+            .active {
+    
+                @include transition(.5s);
+            }
+    
+            &__text {
+                font-size: 1.25em;
+                width: 55%;
+                background: url(../images/pattern-quotes.svg) 6vw 0vh no-repeat;
+                display: flex;
+                height: 50%;
+                text-align: center;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 0.9275em;
+                margin: 0;
+    
+                &__description {
+                    text-align: initial;
+                }
+    
+                .author {
+                    display: flex;
+                    margin-top: 1.75rem;
+    
+                    &__name {
+                        margin-right: 1rem;
+                    }
+    
+                    &__position {
+                    }
+                }
+            }
+    
+            &__img {
+                width: 65%;
+                position: absolute;
+                margin: auto;
+                margin-left: 40%;
+                z-index: -1;
+    
+                &__container {
+    
+                    &__testimonial {
+                    }
+                }
+            }
+    
+            &__controls {
+                height: 3rem;
+                width: 6rem;
+                transform: translate(39vw, 34.25vh);
+    
+                &__previous {
+                }
+    
+                &__next {
+                }
+            }
+        }
+    }
+}
