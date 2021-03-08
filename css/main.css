@@ -32,6 +32,7 @@ body {
   height: 100%;
   background: url("../images/pattern-curve.svg") white bottom left no-repeat, url("../images/pattern-bg.svg") white center 4vh no-repeat;
   background-size: 75%;
+  background-color: white;
   font-family: "Inter", "Helvetica neue", Helvetica;
   font-size: 32px;
   color: #babacf;
@@ -49,7 +50,6 @@ main {
   height: 100%;
   margin: auto;
   position: relative;
-  background-color: white;
 }
 main .slider {
   display: flex;
